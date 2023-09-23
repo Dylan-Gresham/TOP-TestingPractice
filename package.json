@@ -1,0 +1,19 @@
+{
+  "name": "top-testingpractice",
+  "version": "1.0.0",
+  "description": "A project under The Odin Project",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan-Gresham/TOP-TestingPractice.git"
+  },
+  "author": "Dylan Gresham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Dylan-Gresham/TOP-TestingPractice/issues"
+  },
+  "homepage": "https://github.com/Dylan-Gresham/TOP-TestingPractice#readme"
+}
