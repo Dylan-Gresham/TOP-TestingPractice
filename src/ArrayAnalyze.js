@@ -1,5 +1,6 @@
 function analyzeArray(array) {
-    if(array === undefined || array === null) {
+    if(array === undefined || array === null 
+	   || Array.isArray(array) === false) {
         return undefined;
     } else {
         return {
