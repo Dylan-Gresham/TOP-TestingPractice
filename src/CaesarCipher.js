@@ -1,10 +1,14 @@
 function caesarCipher(string, shiftFactor) {
     if(string === undefined || shiftFactor === undefined) {
-        return;
+        return undefined;
     } else if(typeof string !== 'string') {
-        return;
+        return undefined;
     } else if(typeof shiftFactor !== 'number') {
-        return;
+        return undefined;
+    }
+
+    while(shiftFactor < 0) {
+        shiftFactor += 26;
     }
 
     let allLetters = /[a-zA-z]/;
@@ -12,9 +16,14 @@ function caesarCipher(string, shiftFactor) {
     for(let i = 0; i < string.length; i++) {
         let currChar = string.charAt(i);
         if(allLetters.test(currChar)) {
-            encoded.concat(String.fromCharCode((currChar.charCodeAt(0) - 97 + shiftFactor) % 26 + 97));
+            const currCharCode = currChar.charCodeAt(0);
+            if(currCharCode >= 65 && currCharCode <= 90) {
+                encoded += String.fromCharCode((currCharCode - 65 + shiftFactor) % 26 + 65);
+            } else {
+                encoded += String.fromCharCode((currCharCode - 97 + shiftFactor) % 26 + 97);
+            }
         } else {
-            encoded.concat(currChar);
+            encoded += currChar;
         }
     }
 
