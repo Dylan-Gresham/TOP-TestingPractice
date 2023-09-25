@@ -1,6 +1,6 @@
 function capitalize(str) {
     if(typeof str !== 'string') {
-        return;
+        return undefined;
     }
 
     let firstChar = str.slice(0, 1);
@@ -11,7 +11,7 @@ function capitalize(str) {
 
 function reverseString(str) {
     if(typeof str !== 'string') {
-        return;
+        return undefined;
     }
 
     // Split converts to an array of chars, reverse reverses the entire array
