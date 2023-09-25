@@ -4,9 +4,9 @@ module.exports = class Calculator {
 
     add = (a, b) => {
         if(typeof a !== 'number') {
-            return;
+            return undefined;
         } else if(typeof b !== 'number') {
-            return;
+            return undefined;
         }
 
         return a + b;
@@ -14,9 +14,9 @@ module.exports = class Calculator {
 
     subtract = (a, b) => {
         if(typeof a !== 'number') {
-            return;
+            return undefined;
         } else if(typeof b !== 'number') {
-            return;
+            return undefined;
         }
 
         return a - b;
@@ -24,9 +24,9 @@ module.exports = class Calculator {
 
     divide = (a, b) => {
         if(typeof a !== 'number') {
-            return;
+            return undefined;
         } else if(typeof b !== 'number') {
-            return;
+            return undefined;
         }
 
         return a / b;
@@ -34,9 +34,9 @@ module.exports = class Calculator {
 
     multiply = (a, b) => {
         if(typeof a !== 'number') {
-            return;
+            return undefined;
         } else if(typeof b !== 'number') {
-            return;
+            return undefined;
         }
 
         return a * b;
