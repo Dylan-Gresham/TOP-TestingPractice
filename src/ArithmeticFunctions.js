@@ -1,4 +1,4 @@
-class Calculator {
+module.exports = class Calculator {
     constructor() {
         const add = (a, b) => {
             if(typeof a !== 'number') {
@@ -41,5 +41,3 @@ class Calculator {
         };
     }
 }
-
-module.exports = Calculator;
