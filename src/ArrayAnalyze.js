@@ -1,6 +1,16 @@
 function analyzeArray(array) {
-    if(array === undefined || array === null 
-	   || Array.isArray(array) === false) {
+    function isWrongType(array) {
+        for(let i = 0; i < array.length; i++) {
+            if(typeof array[i] !== 'number') {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+    if(array === undefined || array === null  || Array.isArray(array) === false
+        || isWrongType(array)) {
         return undefined;
     } else {
         return {
@@ -13,20 +23,16 @@ function analyzeArray(array) {
 }
 
 function average(array) {
-    let sum = 0;
-    array.forEach(num => {
-        sum += num;
-    });
-
-    return sum / array.length;
+    let cumSum = array.reduce( (partialSum, currNum) => partialSum + currNum, 0)
+    return cumSum / array.length;
 }
 
 function min(array) {
-    return Math.min(array);
+    return Math.min(...array);
 }
 
 function max(array) {
-    return Math.max(array);
+    return Math.max(...array);
 }
 
 function getArrayLength(array) {
