@@ -3,9 +3,9 @@ module.exports = class Calculator {
     constructor() {}
 
     add = (a, b) => {
-        if(typeof a !== 'number') {
+        if(typeof a !== 'number' || isNaN(a)) {
             return undefined;
-        } else if(typeof b !== 'number') {
+        } else if(typeof b !== 'number' || isNaN(b)) {
             return undefined;
         }
 
@@ -13,9 +13,9 @@ module.exports = class Calculator {
     };
 
     subtract = (a, b) => {
-        if(typeof a !== 'number') {
+        if(typeof a !== 'number' || isNaN(a)) {
             return undefined;
-        } else if(typeof b !== 'number') {
+        } else if(typeof b !== 'number' || isNaN(b)) {
             return undefined;
         }
 
@@ -23,9 +23,9 @@ module.exports = class Calculator {
     };
 
     divide = (a, b) => {
-        if(typeof a !== 'number') {
+        if(typeof a !== 'number' || isNaN(a)) {
             return undefined;
-        } else if(typeof b !== 'number') {
+        } else if(typeof b !== 'number' || isNaN(b)) {
             return undefined;
         }
 
@@ -33,9 +33,9 @@ module.exports = class Calculator {
     };
 
     multiply = (a, b) => {
-        if(typeof a !== 'number') {
+        if(typeof a !== 'number' || isNaN(a)) {
             return undefined;
-        } else if(typeof b !== 'number') {
+        } else if(typeof b !== 'number' || isNaN(b)) {
             return undefined;
         }
 
