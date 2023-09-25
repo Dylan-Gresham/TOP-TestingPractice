@@ -1,43 +1,44 @@
 module.exports = class Calculator {
-    constructor() {
-        const add = (a, b) => {
-            if(typeof a !== 'number') {
-                return;
-            } else if(typeof b !== 'number') {
-                return;
-            }
 
-            return a + b;
-        };
+    constructor() {}
 
-        const subtract = (a, b) => {
-            if(typeof a !== 'number') {
-                return;
-            } else if(typeof b !== 'number') {
-                return;
-            }
+    add = (a, b) => {
+        if(typeof a !== 'number') {
+            return;
+        } else if(typeof b !== 'number') {
+            return;
+        }
 
-            return a - b;
-        };
+        return a + b;
+    };
 
-        const divide = (a, b) => {
-            if(typeof a !== 'number') {
-                return;
-            } else if(typeof b !== 'number') {
-                return;
-            }
+    subtract = (a, b) => {
+        if(typeof a !== 'number') {
+            return;
+        } else if(typeof b !== 'number') {
+            return;
+        }
 
-            return a / b;
-        };
+        return a - b;
+    };
 
-        const multiply = (a, b) => {
-            if(typeof a !== 'number') {
-                return;
-            } else if(typeof b !== 'number') {
-                return;
-            }
+    divide = (a, b) => {
+        if(typeof a !== 'number') {
+            return;
+        } else if(typeof b !== 'number') {
+            return;
+        }
 
-            return a * b;
-        };
-    }
+        return a / b;
+    };
+
+    multiply = (a, b) => {
+        if(typeof a !== 'number') {
+            return;
+        } else if(typeof b !== 'number') {
+            return;
+        }
+
+        return a * b;
+    };
 }
